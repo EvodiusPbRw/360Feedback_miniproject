@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_feedbacks_roles,access.feedbacks.roles,model_feedbacks_roles,,1,1,1,1
+access_feedbacks_persons,access.feedbacks.persons,model_feedbacks_persons,,1,1,1,1
+access_feedbacks_question,access.feedbacks.question,model_feedbacks_questions,,1,1,1,1
+access_feedbacks_questionnaire,access.feedbacks.questionnaire,model_feedbacks_questionnaire,,1,1,1,1
+access_feedbacks_answer,access.feedbacks.answer,model_feedbacks_answers,,1,1,1,1

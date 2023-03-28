@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="feedbacks_root_menu" name="360 Feedbacks" sequence="450"/>
+    <menuitem id="feedbacks_sub_menu" name="Feedbacks Menu" parent="feedbacks_root_menu"/>
+    <menuitem id="feedbacks_roles_menu" name="Roles Management" sequence="5" parent="feedbacks_sub_menu" action="feedbacks_360.roles_action_id"/>
+    <menuitem id="feedbacks_persons_menu" name="Persons Management" sequence="10" parent="feedbacks_sub_menu" action="feedbacks_360.persons_action_id"/>
+    <menuitem id="feedbacks_question_menu" name="Question Management" sequence="15" parent="feedbacks_sub_menu" action="feedbacks_360.question_action_id"/>
+    <menuitem id="feedbacks_questionnaire_menu" name="Questionnaire Management" sequence="20" parent="feedbacks_sub_menu" action="feedbacks_360.questionnaire_action_id"/>
+    <menuitem id="feedbacks_answer_menu" name="Answer View" sequence="25" parent="feedbacks_sub_menu" action="feedbacks_360.answer_action_id"/>
+</odoo>

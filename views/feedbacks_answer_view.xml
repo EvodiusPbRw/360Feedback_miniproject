@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="feedbacks_answer_tree_view_id" model="ir.ui.view">
+        <field name="name">feedbacks_tree_answer_view_id</field>
+        <field name="model">feedbacks.answers</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="answerId"/>
+                <field name="questionnaireId"/>
+                <field name="personId"/>
+                <field name="answerPoint"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="feedbacks_answer_form_view_id" model="ir.ui.view">
+        <field name="name">feedbacks_answer_form_view_id</field>
+        <field name="model">feedbacks.answers</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="answerId" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="questionnaireId" widget="selection"/>
+                        </group>
+                        <group>
+                            <field name="personId" widget="selection"/>
+                        </group>
+                        <group>
+                            <field name="answerPoint" widget="selection"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
